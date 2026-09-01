@@ -97,10 +97,10 @@
 								<li> <b>Business Question:</b> The energy market regulator needed to better understand factors affecting energy stability and market reliability. The analysis focused on determining which types of outages posed the greatest risk, whether outage patterns were improving or worsening, and which market participants contributed most heavily to energy loss.</li>
 								<li> <b>Approach:</b> I used SQL and SQLite in Jupyter Notebook to query and aggregate outage data by outage type, year, month, participant, frequency, duration, and energy loss. I then used Tableau to visualize the results and build a storyboard showing how outage patterns changed over time and where reliability risks were concentrated.</li>
 								<li> <b>Key Findings:</b> Forced outages emerged as the primary reliability concern. They accounted for the largest number of outage events and increased from 1,264 in 2016 to 1,622 in 2017—a 28% increase—while the other outage categories declined.
-									<br><br>The analysis also showed that forced outages were driving the upward trend in monthly outages during 2017. Your SQL analysis specifically concluded that forced outages were increasing in 2017 and were the most frequent outage type overall.
-									<br><br>Energy-loss risk was also concentrated among a relatively small group of market participants. GW, AURICON, and MELK emerged as major contributors to energy loss, while the participant analysis revealed that frequency and duration represented different kinds of operational risk.</li>
+									<br>The analysis also showed that forced outages were driving the upward trend in monthly outages during 2017. Your SQL analysis specifically concluded that forced outages were increasing in 2017 and were the most frequent outage type overall.
+									<br>Energy-loss risk was also concentrated among a relatively small group of market participants. GW, AURICON, and MELK emerged as major contributors to energy loss, while the participant analysis revealed that frequency and duration represented different kinds of operational risk.</li>
 								<li> <b>Recommendations:</b> The regulator should prioritize forced-outage mitigation rather than treating all outage types equally. Participants responsible for high levels of forced outages and energy loss should receive greater attention, while participants experiencing unusually long outage durations should be investigated separately.
-									<br><br>This would allow the regulator to focus its efforts on both preventing frequent unplanned outages and reducing recovery time when outages occur, improving overall market reliability.</li>
+									<br>This would allow the regulator to focus its efforts on both preventing frequent unplanned outages and reducing recovery time when outages occur, improving overall market reliability.</li>
 							</ul>
 						</p>
 						<span class="image main"><img src="images/photo-1552862750-746b8f6f7f25.png" alt="Light bulb picture"/></span>
@@ -116,19 +116,53 @@
 				<!-- Section -->
 					<section>
 						<header>
-							<h2>Data Exploration in SQL and Visualization in Tableau</h2>
+							<h2>COVID-19 Global Trends Analysis</h2>
 						</header>
 						<div class="content">
-							<p>In this project, a Covid19 Dataset was imported into SQL Server Management Studio: 
-								<ul>
-									<li> <strong>SQL</strong> queries were used with various joins and aggregate methods for exploratory analysis.</li>
-									<li> <strong>Tableau</strong> imported tables created in SQL to create a dashboard.</li>
-								</ul>
+							<p><ul>
+								<li> <strong>Tools:</strong> SQL • SQL Server • Tableau</li>
+								<li> <strong>Focus:</strong> Exploratory Data Analysis • Data Transformation • Trend Analysis • Data Visualization</li>
+							</ul>
+							<ul>
+								<li> <b>Business Question:</b> COVID-19 produced large volumes of global health data that made it difficult to quickly compare how the pandemic affected different populations and regions. This project explored infection, mortality, and vaccination trends to identify geographic differences and changes over time.</li>
+								<li> <b>Approach:</b> I used SQL Server to clean and transform COVID-19 case, death, population, and vaccination data. I calculated infection and mortality rates, joined vaccination and mortality datasets, and used aggregate functions, CTEs, temporary tables, window functions, and views to prepare analysis-ready datasets.
+									<br>I then used Tableau to visualize geographic patterns and compare trends across countries and continents.</li>
+								<li> <b>Key Findings:</b> The analysis revealed substantial geographic differences in COVID-19's impact, with Europe recording the highest total deaths among the continents shown, followed by Asia and North America.
+									<br>Population-adjusted analysis also demonstrated why raw case totals alone can be misleading: countries varied considerably in the percentage of their population infected, making relative measures important when comparing countries of different sizes.
+									<br>Time-series analysis showed substantially different infection trajectories among major countries, while the dashboard's forecasting component illustrated how those trends could develop under projected conditions.</li>
+								<li> <b>Outcome:</b> Created an interactive Tableau dashboard that consolidated global cases, deaths, population-adjusted infection rates, continental mortality, and country-level trends into a single analytical view, allowing users to move from a global overview to more detailed geographic comparisons.</li>
+							</ul>
 							</p>
 							<span class="image main"><img src="images/injection-5873159_640.jpg" alt="Covid image"/></span>
 							<ul class="actions special">
 								<li><a href="https://github.com/JHawz-bit/PortfolioProjects/blob/main/CovidQueries.sql" target="_blank" class="button large">View SQL</a></li>
 								<li><a href="https://public.tableau.com/app/profile/jennifer.hawes/viz/CovidDashboard_16997754169190/Dashboard1#1" target="_blank" class="button large">Tableau</a></li>
+							</ul>
+						</div>
+					</section>
+
+								<!-- Section -->
+					<section>
+						<header>
+							<h2>Airbnb Investment & Pricing Analysis</h2>
+						</header>
+						<div class="content">
+							<p><ul>
+								<li> <strong>Tools:</strong>Tableau</li>
+								<li> <strong>Focus:</strong> Investment Analysis • Pricing Strategy • Location Analysis • Seasonality</li>
+							</ul>
+							<ul>
+								<li> <b>Business Question:</b> A prospective investor was considering entering the Airbnb market and needed to determine where to invest and what type of property could offer the strongest revenue potential. The goal was to evaluate location, property size, pricing, and seasonal trends to identify attractive investment opportunities.</li>
+								<li> <b>Approach:</b> Analyzed Airbnb listing data to compare average prices by ZIP code, bedroom count, and time of year. I used Tableau to visualize geographic pricing differences, evaluate how property size affected nightly rates, and identify seasonal patterns that could influence revenue potential.</li>
+								<li> <b>Key Findings:</b> Airbnb prices varied considerably by both location and property size, making these important factors when evaluating a potential investment. Larger properties generally commanded higher nightly rates, while certain ZIP codes offered substantially higher average prices than others.
+									<br>The analysis also revealed seasonal changes in revenue, indicating that the timing of demand should be considered alongside property characteristics and location when estimating an investment's earning potential.</li>
+								<li> <b>Recommendation:</b> A prospective investor should evaluate properties based on a combination of location, bedroom count, acquisition cost, and seasonal revenue potential, rather than selecting a property based solely on its average nightly rate.
+									<br>The analysis identified higher-priced ZIP codes and larger properties as potential opportunities, but these should be weighed against the additional cost required to acquire and operate those properties.</li>
+							</ul>
+							</p>
+							<span class="image main"><img src="images/injection-5873159_640.jpg" alt="Covid image"/></span>
+							<ul class="actions special">
+								<li><a href="https://public.tableau.com/app/profile/jennifer.hawes/viz/AirbnbDashboard_17001674927650/Dashboard1" target="_blank" class="button large">Tableau</a></li>
 							</ul>
 						</div>
 					</section>
