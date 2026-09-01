@@ -86,13 +86,21 @@
 				</section>
 				<section>
 					<header>
-						<h2>American Energy Market Regulator</h2>
+						<h2>American Energy Market Reliability Analysis</h2>
 					</header>
 					<div class="content">
-						<p>In this project, a database was accessed:
+						<p><ul>
+								<li> <strong>Tools:</strong> SQL • SQLite • Jupyter Notebook • Tableau</li>
+								<li> <strong>Focus:</strong> Market Reliability • Outage Analysis • Energy Loss • Risk Identification</li>
+							</ul>
 							<ul>
-								<li> <strong>SQLite</strong> was used to analyze stability and market outages as well as resulting energy loss.</li>
-								<li> <strong>Tableau</strong> was used to create a storyboard identifying areas to mitigate loss.</li>
+								<li> <b>Business Question:</b> The energy market regulator needed to better understand factors affecting energy stability and market reliability. The analysis focused on determining which types of outages posed the greatest risk, whether outage patterns were improving or worsening, and which market participants contributed most heavily to energy loss.</li>
+								<li> <b>Approach:</b> I used SQL and SQLite in Jupyter Notebook to query and aggregate outage data by outage type, year, month, participant, frequency, duration, and energy loss. I then used Tableau to visualize the results and build a storyboard showing how outage patterns changed over time and where reliability risks were concentrated.</li>
+								<li> <b>Key Findings:</b> Forced outages emerged as the primary reliability concern. They accounted for the largest number of outage events and increased from 1,264 in 2016 to 1,622 in 2017—a 28% increase—while the other outage categories declined.
+									<br><br>The analysis also showed that forced outages were driving the upward trend in monthly outages during 2017. Your SQL analysis specifically concluded that forced outages were increasing in 2017 and were the most frequent outage type overall.
+									<br><br>Energy-loss risk was also concentrated among a relatively small group of market participants. GW, AURICON, and MELK emerged as major contributors to energy loss, while the participant analysis revealed that frequency and duration represented different kinds of operational risk.</li>
+								<li> <b>Recommendations:</b> The regulator should prioritize forced-outage mitigation rather than treating all outage types equally. Participants responsible for high levels of forced outages and energy loss should receive greater attention, while participants experiencing unusually long outage durations should be investigated separately.
+									<br><br>This would allow the regulator to focus its efforts on both preventing frequent unplanned outages and reducing recovery time when outages occur, improving overall market reliability.</li>
 							</ul>
 						</p>
 						<span class="image main"><img src="images/photo-1552862750-746b8f6f7f25.png" alt="Light bulb picture"/></span>
